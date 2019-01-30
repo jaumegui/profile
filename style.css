@@ -1,18 +1,21 @@
+#wagon-logo {
+  height: 40px;
+}
+
 .img-profile {
   height: 230px;
-  border-radius: 60px;
-  border-color: black;
+  border-radius: 20%;
 }
 
 body {
-  background-color: grey;
+  background-color: #fff4e3;
   display: block;
   font-family: Krub;
-  margin: 8px;
 }
 
 h1 {
   font-size: 25px;
+  margin-top: 0px;
 }
 
 h2 {
@@ -25,34 +28,94 @@ h1, h2 {
 
 a {
   font-size: 15px;
-  font-family: Krub;
-  color: black;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: black;
-}
- {}
-.container {
-  width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #f9f8eb;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 2px 3px 2px 1px rgba(69, 35, 0, 0.2);
 }
 
-.sub-container {
-  margin-top: 20px;
+#content {
+  display: block;
+  width: 600px;
+  text-align: center;
+  margin: 30px  auto;
+}
+
+.card {
+  background-color: rgba(255, 160, 98, 0.2);
+  box-shadow: 2px 3px 2px 1px rgba(69, 35, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+}
+
+#sidebar {
+  background-color: #5d5d5a;
+  line-height: 70px;
+  position: fixed;
+  width: 120px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#sidebar ul {
+  list-style: none;
 }
 
 .fab {
   color: #396aae;
 }
 
-#wagon-logo {
-  height: 40px;
+.fa {
+  color: #a1aeb7;
+  font-size: 40px;
+}
+
+.fa:hover {
+  color: white;
+}
+
+#footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.list-inline {
+  padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+  #content{
+    margin-left: 0px;
+  }
+  #sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  #content {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  #content {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  #content {
+    width: 300px;
+  }
 }

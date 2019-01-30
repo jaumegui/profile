@@ -8,24 +8,63 @@
   <title>Basic Infos</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Guillaume Ecollan</h1>
-    <img src="images/profilepic.jpeg" class="img-profile">
-    <h2>Student @Le Wagon</h2>
-    <a href="https://www.lewagon.com/"><img src="images/logo-big.png" alt="" id="wagon-logo"></a>
-
+  <div id="sidebar">
+  <ul>
+        <li>
+          <a href="#intro">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#content-body">
+            <i class="fa fa-life-ring"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#content-about">
+            <i class="fa fa-sort-amount-down"></i>
+          </a>
+        </li>
+      </ul>
   </div>
+  <div id="content">
+    <div class="card" id="intro">
+      <h1>Guillaume Ecollan</h1>
+      <img src="images/profilepic.jpeg" class="img-profile">
+      <h2>Student @Le Wagon</h2>
+    </div>
 
-  <div class="container">
-    <p>I want to learn from the best! <i class="fas fa-laugh-beam" style="color: #FF0027"></i></p>
-    <p>When I'm not learning code, I try to improve my kitesurf skills</p>
-    <p>This is a video from last year!</p>
-      <div><iframe width="560" height="315" src="https://www.youtube.com/embed/6eCo291AMXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-      <div class="sub-container">
-      <i class="fab fa-facebook"></i>
-      <a href="https://www.facebook.com/guillaume.ecollan" style="color: #396aae">Facebook</a>
-      </div>
-  </div>
-
+    <div class="card" id="content-body">
+      <a href="https://www.lewagon.com/"><img src="images/logo-big.png" alt="" id="wagon-logo"></a>
+      <p>I want to learn from the best!</p>
+      <p>When I'm not learning code, I try to improve my kitesurf skills</p>
+      <p>This is a video from last year!</p>
+        <div><iframe width="560 " height="315" src="https://www.youtube.com/embed/6eCo291AMXw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="sub-container">
+        <i class="fab fa-facebook"></i>
+        <a href="https://www.facebook.com/guillaume.ecollan" style="color: #396aae">Facebook</a>
+        </div>
+    </div>
+    <div class="card" id="content-about">
+          <h2>About this page</h2>
+          This page has been coded during the <a href="http://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>
+          <ul class="list-inline">
+           <li>
+             <a href="#">
+               <i class="fa fa-heart"></i>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <i class="fa fa-share"></i>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <i class="fa fa-star"></i>
+             </a>
+           </li>
+          </ul>
+        </div>
+  </html>
 </body>
-</html>
